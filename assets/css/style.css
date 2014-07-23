@@ -1,0 +1,251 @@
+/********************
+ Author: Divya Ranjan 
+********************/
+body
+{
+	border-top: 2px solid #ffffff;
+  min-width: 1100px;
+}
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+*, *:after, *:before 
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/* Header Part */
+.banner
+{
+	background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+	width: 100%;
+	height: 450px;
+  text-align: center;
+}
+.banner ul.nav
+{
+	float: left;
+    margin-right: 16px;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner ul.nav li
+{
+	display: inline-block;
+	padding: 5px 6px;
+}
+.banner ul.nav li a
+{
+	color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition-delay: 0.4s;
+       -moz-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+.banner ul.nav li a:hover
+{
+	border-bottom: 1px solid #ffffff;
+}
+.banner .banner-content
+{
+	padding: 10%;
+}
+.banner .logo img
+{
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+.banner h1
+{
+	font-family: 'Open Sans Light', sans-serif;
+	color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 300%;
+}
+/* Content */
+.main-content
+{
+   background: #FFFFFF;
+   border-bottom: 1px solid rgba(208, 217, 226, 0.4);
+}
+.main-content:after
+{
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 20px;
+}
+.content
+{
+	float: left;
+	display: block;
+	min-height: 100%;
+	width: 33.33%;
+	padding: 0px 100px;
+	margin-top: 20px;
+  text-align: center;
+}
+.content h1, .blog-contents h1
+{
+	font-family: 'Open Sans', sans-serif;
+	color: #404040;
+  font-size: 95%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.content p
+{
+	font-family: 'Open Sans', sans-serif;
+  color: #474747;
+  font-size: 95%;
+  line-height: 160%;
+  word-spacing: 2px;
+  height: 50px;
+}
+.content p a, .blog-contents ul#blog-ul li a
+{
+  background: #FC8635;
+  color: #ffffff;
+  padding: 1px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.blog-contents ul#blog-ul li a
+{
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+/* Blog Contents */
+.blog-contents
+{
+	background: url(../img/bg.jpg) no-repeat;
+	text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  padding: 3%;
+}
+.blog-contents h1
+{
+  font-size: 130%;
+  color: #ffffff;
+}
+.blog-contents h1:after, .content h1:after 
+{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #ffffff;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: -7px;
+}
+.content h1:after
+{
+  width: 30px;
+  background: #FC8635;
+}
+.blog-contents ul#blog-ul
+{
+  list-style: none;
+}
+.blog-contents ul#blog-ul li a
+{
+  text-decoration: none;
+  padding: 5px 15px;
+}
+.blog-contents a.more
+{
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 95%;
+}
+.objective
+{
+  background: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+.objective h1
+{
+  font-family: 'Open Sans Light', sans-serif;
+  color: #FC8635;
+}
+.objective .highlight
+{
+  background: #FC8635;
+  color: #ffffff;
+  padding: 0px 10px;
+}
+/* Footer */
+footer
+{
+  background: #ffffff;
+  color: #202020;
+  padding: 10px 100px 10px 100px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+footer .footer-logo
+{
+  font-size: 80%;
+  text-align: center;
+}
+footer .footer-logo a
+{
+  color: #FC8635;
+  text-decoration: none;
+}
+.footer-menu ul
+{
+  list-style: none;
+  margin-left: -35px;
+}
+.footer-menu li
+{
+  display: inline-block;
+}
+/* Animation */
+.delay-1
+{
+          animation-delay: 0.5;
+     -moz-animation-delay: 0.5;
+  -webkit-animation-delay: 0.5;
+}
+.delay-2
+{
+          animation-delay: 1s;
+     -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.delay-3
+{
+          animation-delay: 1.5s;
+     -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+/* Responsive Styling */
+@media screen (min-width: 1000px) {
+  .banner h1
+  {
+    font-size: 180%;
+  }
+}
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
