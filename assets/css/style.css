@@ -78,7 +78,7 @@ img
 /* Content */
 .main-content
 {
-     background: #ffffff url('https://mozorg.cdn.mozilla.net/media/img/firefox/os/have-it-all/fox-tail-detail.png') no-repeat top right;
+     background: #ffffff url('../img/fox-tail-detail.png') no-repeat top right;
 
    padding: 10px;
 }
