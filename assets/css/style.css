@@ -78,7 +78,8 @@ img
 /* Content */
 .main-content
 {
-   background: #FFFFFF;
+     background: #ffffff url('https://mozorg.cdn.mozilla.net/media/img/firefox/os/have-it-all/fox-tail-detail.png') no-repeat top right;
+
    padding: 10px;
 }
 h1.title
@@ -95,6 +96,14 @@ h1.title
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
+}
+.content-3 .fa
+{
+  color: #424242;
+}
+.content-3 .fa-2x 
+{
+  font-size: 120%;
 }
 .content-3 p
 {
@@ -139,6 +148,7 @@ h1.title
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
   font-size: 105%;
+  padding-top: 10px;
 }
 .firefox-os .features
 {
@@ -165,16 +175,17 @@ h1.title
 }
 .browser-download .download
 {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 .browser-download a
 {
-  color: #346012;
+  color: #37833D;
   font-family: 'Open Sans', sans-serif;
   border: 2px solid #81bc2e;
   font-size: 90%;
   text-decoration: none;
   padding: 5px 7px;
+  background: #EAF8D6;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
           border-radius: 2px;
