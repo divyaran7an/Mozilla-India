@@ -79,43 +79,34 @@ img
 .main-content
 {
    background: #FFFFFF;
-   border-bottom: 1px solid rgba(208, 217, 226, 0.4);
+   padding: 10px;
 }
-.main-content:after
-{
-    content: "";
-    display: table;
-    clear: both;
-    margin-bottom: 20px;
-}
-.content
-{
-	float: left;
-	display: block;
-	min-height: 100%;
-	width: 33.33%;
-	padding: 0px 100px;
-	margin-top: 20px;
-  text-align: center;
-}
-.content h1, .blog-contents h1
+h1.title
 {
 	font-family: 'Open Sans', sans-serif;
-	color: #404040;
-  font-size: 95%;
+	color: #424242;
+  font-size: 96%;
   font-weight: 600;
   text-transform: uppercase;
 }
-.content p
+.main-content .content-3
+{
+  padding: 0px 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.content-3 p
 {
 	font-family: 'Open Sans', sans-serif;
   color: #474747;
-  font-size: 95%;
+  font-size: 93%;
   line-height: 160%;
   word-spacing: 2px;
   height: 50px;
 }
-.content p a, .blog-contents ul#blog-ul li a
+.content-3 p a, 
+.blog-contents ul#blog-ul li a
 {
   background: #FC8635;
   color: #ffffff;
@@ -129,22 +120,82 @@ img
   background: transparent;
   border: 1px solid #ffffff;
 }
+/* Firefox OS Div */
+.firefox-os, .browser-download
+{
+  background: #7accc8;
+  padding: 2% 10% 0 10%;
+}
+.firefox-os h1.title
+{
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 165%;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.firefox-os .os-intro
+{
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  font-size: 105%;
+}
+.firefox-os .features
+{
+  padding-top: 5px;
+}
+/* Browser */
+.browser-download
+{
+  background: url(../img/grid.png);
+  margin-bottom: -3.5px;
+  text-align: center;
+}
+.browser-download
+{
+  padding: 3% 3% 0 3%;
+}
+.browser-download .title
+{
+  font-size: 110%;
+}
+.browser-download h1.title:after
+{
+  background: #81bc2e;
+}
+.browser-download .download
+{
+  padding-top: 40px;
+}
+.browser-download a
+{
+  color: #346012;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #81bc2e;
+  font-size: 90%;
+  text-decoration: none;
+  padding: 5px 7px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
 /* Blog Contents */
 .blog-contents
 {
-	background: url(../img/bg.jpg) no-repeat;
+	background: url(../img/cards.JPG);
 	text-align: center;
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
   padding: 3%;
 }
-.blog-contents h1
+.blog-contents h1,
+.firefox-os h1
 {
   font-size: 130%;
   color: #ffffff;
 }
-.blog-contents h1:after, .content h1:after 
+h1.title:after
 {
   content: "";
   display: block;
@@ -155,10 +206,14 @@ img
   margin-top: 5px;
   margin-bottom: -7px;
 }
-.content h1:after
+.content-3 h1:after
 {
   width: 30px;
   background: #FC8635;
+}
+.firefox-os h1:after
+{
+  width: 60px;
 }
 .blog-contents ul#blog-ul
 {
@@ -238,6 +293,27 @@ footer .footer-logo a
           animation-delay: 1.5s;
      -moz-animation-delay: 1.5s;
   -webkit-animation-delay: 1.5s;
+}
+/* Grid */
+.container:after
+{
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: -3.5px;
+}
+[class*='content-'] {
+  float: left;
+  display: block;
+  min-height: 100%;
+}
+.content-2
+{
+  width: 66.66%;
+}
+.content-3
+{
+  width: 33.33%;
 }
 /* Responsive Styling */
 @media screen (min-width: 1000px) {
