@@ -78,8 +78,6 @@ img
 /* Content */
 .main-content
 {
-     background: #ffffff url('../img/fox-tail-detail.png') no-repeat top right;
-
    padding: 10px;
 }
 h1.title
@@ -162,6 +160,14 @@ h1.title
   text-align: center;
 }
 .browser-download
+{
+  padding: 0;
+}
+.browser-download .tail
+{
+  background: url('../img/fox-tail-detail.png') no-repeat top right;
+}
+.browse-content
 {
   padding: 3% 3% 0 3%;
 }
