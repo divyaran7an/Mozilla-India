@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-	<link href="http://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 <a href="https://www.mozilla.org/" id="tabzilla" class="animated slideInDown delay-1">mozilla</a>
@@ -25,6 +25,9 @@
   	 <img src="assets/img/logo.png">
    </div>
    <h1 class="animated fadeInUp delay-3">Unity In The Midst Of Diversity</h1>
+   <div class="animated bounceInLeft delay-4">
+   <a href="#firefox-os" class="trending">Launch of the Month: Firefox OS</a>
+   </div>
    </div>
   </div>
 </header>
@@ -60,6 +63,7 @@
      <p>Get to know <a href="http://www.mozilla.org/about/">Mozilla</a> a little bit better.</p>
   </div>
 </div>
+<div id="firefox-os">
 <div class="firefox-os container">
 <h1 class="title">Firefox OS — The Adaptive Phone</h1>
 	<div class="phones content-2">
@@ -69,6 +73,7 @@
       Firefox OS is packed with the features that made you want a smartphone in the first place. It fits your life perfectly so you can fit in with the world around you.
       	<img src="https://mozorg.cdn.mozilla.net/media/img/firefox/os/have-it-all/app-icons.png" class="features">
 	</div>
+</div>
 </div>
 <div class="browser-download container">
 <div class="tail">
@@ -112,6 +117,16 @@
 	<!-- Js files -->
 	<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
-	<script src="http://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+	<script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+	<script>
+         window.scrollback = {
+             streams: ['mozilla-india'],
+             theme:   'light',
+             ticker:  true
+         };
+         // Don't change below this line ------------------------------------------------
+         (function(d,h,e){e=d.createElement('script');e.async=1;e.src=h+'/client.min.js';
+                          scrollback.host=h;d.body.appendChild(e);}(document,'http://scrollback.io'));
+        </script>
 </body>
 </html>
